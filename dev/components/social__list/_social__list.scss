@@ -1,0 +1,23 @@
+.social__list{
+  display: flex;
+}
+
+.social__item{
+  margin: 0 20px 0 0;
+  &:last-child{
+    margin: 0;
+  }
+}
+
+.social__icon{
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.social__link{
+  opacity: .8;
+  &:hover{
+    opacity: 1;
+  }
+}

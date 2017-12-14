@@ -1,0 +1,28 @@
+.header {
+  background: url($imgg) center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  &__social__block{
+    position: relative;
+    right: 20%;
+  }
+
+  &__hamburger__menu{
+    position: relative;
+    left: 25%;
+  }
+
+  &__arrow__down {
+    display: flex;
+  }
+}

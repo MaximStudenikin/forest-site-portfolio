@@ -1,0 +1,16 @@
+extends ../base
+include ../../common/mixin/mixin
+block head
+    title welcome page
+block content
+    section.welcome__page
+        div.wrap
+            div.welcome__page--container
+                div.welcome__page--header
+                    + link('#', 'Авторизоваться')(class='btn')
+                div.welcome__form
+                    include ../../components/persone/persone
+                    include ../../components/social__list/_social__list
+                    + list('form', 'Мои работы', 'Обо мне', 'Блог')
+                div.welcome__page--footer
+                    p &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016

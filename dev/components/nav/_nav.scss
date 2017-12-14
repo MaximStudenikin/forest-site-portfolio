@@ -1,0 +1,23 @@
+.form {
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    border-right: 2px solid $white;
+    display: flex;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__link {
+    color: $white;
+    padding: 14px 32px;
+    white-space: nowrap;
+    background-color: $green *1;
+    &:hover {
+      background: $green /1.2;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.welcome__page{
+  background: url($imgg) center;
+  background-size: cover;
+}
+
+.welcome__page--container{
+  position: relative;
+  display: flex;
+  width: 95%;
+  height: 100%;
+  max-width: 1800px;
+  min-width: 480px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.welcome__page--header{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  @include phones{
+    justify-content: center;
+  }
+}
+
+.welcome__form{
+  background: transparentize($dark, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  height: 395px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.welcome__page--footer{
+  color: $white;
+  text-align: center;
+}
