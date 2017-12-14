@@ -1,0 +1,28 @@
+.big__title{
+  font-size: 63px;
+  line-height: 1.05;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
+  &:after{
+    content: '';
+    display: block;
+    width: 90px;
+    border-bottom: $black 3px solid;
+    margin: 30px auto;
+  }
+}
+
+.normal__title{
+  font-size: 35px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  &:after{
+    content: '';
+    display: block;
+    width: 90px;
+    border-bottom: $black 3px solid;
+    margin: 30px auto;
+  }
+}

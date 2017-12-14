@@ -6,15 +6,22 @@ block content
         include ../../components/header/header
         .container
             section.about
-                div.about__text
-                    div.headeing Обо мне
-                    img.persone__photo
-                    div.subtitle Кто я
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
-                div.about__skills
-                    div.subtitle lorem
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, blanditiis, corporis cupiditate debitis deleniti deserunt dolor dolore earum ipsum itaque maxime minima necessitatibus omnis quae quasi, sequi similique. Commodi, corporis.
+                svg(viewBox="0 0 1000 85").about__bg
+                    polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="left-triangle")
+                    polygon(points="1000,0   1000,86   500,86   500,75.5", class="right-triangle")
+                div.about__left
+                    div.about__left__col--left
+                        h1.big__title Обо мне
+                    div.about__left__col--right
+                        div.about__text
+                            img(src=require("../../images/person__big.jpg"), class='big__photo')
+                            h2.normal__title Кто я
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
+                div.about__right
+                    div.about__text
+                        h2.normal__title lorem
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, blanditiis, corporis cupiditate debitis deleniti deserunt dolor dolore earum ipsum itaque maxime minima necessitatibus omnis quae quasi, sequi similique. Commodi, corporis.
                     div.harakters
                         .frontent
                         .backend
@@ -22,7 +29,7 @@ block content
             section.map
                 div.contacts
                     div.map__section
-                    .subtitle lorem
+                    h2.normal__title lorem
                      ul.contacts__list
                          li.contacts__item
                             a.contacts__link

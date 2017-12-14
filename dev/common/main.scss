@@ -4,6 +4,7 @@ $imgg: '../images/bg.jpg';
 $white: #fff;
 $green: #4e8839;
 $dark: #122620;
+$black: #373e42;
 
 // resolutions
 $large__devices: 1200px;
@@ -20,6 +21,7 @@ $phones: 480px;
 @import 'layout/_tag_reset';
 @import 'layout/_fonts';
 @import 'layout/_base';
+@import 'layout/title';
 
 //components
 @import 'layout/_btn';
