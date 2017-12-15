@@ -2,7 +2,10 @@
   width: 100%;
   height: 100%;
   display: flex;
-  margin: 15px 0 0 0;
+
+  p{
+    margin: 15px 0 0 0;
+  }
 }
 
 .about__left, .about__right {
@@ -23,7 +26,7 @@
 
 .about__bg{
   position: absolute;
-  top: -7%;
+  top: -7.6%;
   .left-triangle{
     fill: #ebefe2;
   }
@@ -41,5 +44,14 @@
 .about__text{
   display: flex;
   flex-direction: column;
+  width: 95%;
+  padding: 15px 0;
 }
 
+.about__title{
+  margin: 45px 0 0 0;
+}
+
+.about__right{
+
+}
