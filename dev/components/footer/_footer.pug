@@ -1,0 +1,15 @@
+include ../../common/mixin/mixin
+footer
+    div.footer__container
+        div.footer__col-1
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti ipsum.
+        div.footer__col-2
+            + list('nav', 'Мои работы', 'Обо мне', 'Блог', 'Авторизоватся')
+            div.footer__social__list
+                include  ../../components/social__list/_social__list.pug
+        div.footer__col-3
+            blockquote
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+                    address &ndash; lorem impsum
+    div.footer__bottom
+        p &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016
