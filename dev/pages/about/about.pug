@@ -28,11 +28,29 @@ block content
                         .WorkFolow
             section.map
                 div.contacts
-                    h2.normal__title lorem
-                ul.contacts__list
-                    li.contacts__item
-                        a.contacts__link
+                    h2.normal__title lorem ipusm
+                    ul.contacts__list
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title skype_im
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title myemail@my.com
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title +444 444 44 44
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title ул. Балчуг, 7, Москва, 115035
+
                 div#map
                     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_CAeQUG0TIsrm45B2YViKvjJEz8zxZY0&callback=initMap', async defer)
-
-        include ../../components/footer/_footer
+            include ../../components/footer/_footer
