@@ -26,3 +26,15 @@
     margin: 30px auto;
   }
 }
+
+.title__blog{
+  color: #fff;
+  margin: 10% 0 0 0;
+  &:after {
+    content: '';
+    display: block;
+    width: 90px;
+    border-bottom: #fff 3px solid;
+    margin: 30px auto;
+  }
+}

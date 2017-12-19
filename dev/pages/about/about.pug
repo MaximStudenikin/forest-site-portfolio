@@ -6,9 +6,6 @@ block content
         include ../../components/header/header
         .container
             section.about
-                svg(viewBox="0 0 1000 85").about__bg
-                    polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="left-triangle")
-                    polygon(points="1000,0   1000,86   500,86   500,75.5", class="right-triangle")
                 div.about__left
                     div.about__left__col--left
                         h1.big__title Обо мне
@@ -53,4 +50,5 @@ block content
 
                 div#map
                     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_CAeQUG0TIsrm45B2YViKvjJEz8zxZY0&callback=initMap', async defer)
-            include ../../components/footer/_footer
+            section
+                include ../../components/footer/_footer

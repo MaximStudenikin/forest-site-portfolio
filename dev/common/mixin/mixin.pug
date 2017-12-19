@@ -6,3 +6,14 @@ mixin list(className,...items)
 
 mixin link(href, name)
     a(class!=attributes.class href=href)=name
+
+mixin article(title,data)
+    .article
+        .article__container
+            a.article__link(href='#')
+                h2.article__title=title
+            span.article__data=data
+            if block
+                block
+            else
+                p No content provided

@@ -25,4 +25,29 @@
   &__arrow__down {
     display: flex;
   }
+
+  &__triangle{
+    position: absolute;
+    bottom: 0;
+    .left-triangle{
+      fill: #ebefe2;
+    }
+    .right-triangle{
+      fill: #f4f5f0;
+    }
+    .left-triangle-standart{
+      fill: #f4f5f0;
+    }
+  }
+
+  &__blog {
+    margin: auto;
+  }
+  &__top__blog{
+    margin: 4% 0 0 0;
+  }
+
+  &__blog{
+
+  }
 }
