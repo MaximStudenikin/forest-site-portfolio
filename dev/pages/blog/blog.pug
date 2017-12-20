@@ -4,7 +4,8 @@ block head
     title blog
 block content
     .wrap
-        section.header
+        section.header.paralax__effect--scroll(data-speed=
+        "3")
             div.header__top.header__top__blog
                 div.header__social__block
                     include ../../components/social__list/_social__list
@@ -34,17 +35,14 @@ block content
                                 a.blog__nav__link(href='#') Втопил до упора с pug
                 div.blog__col__right
                     +article('Самый сок в SASS', '12 ноября 2018')
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                     +article('Верстка без боли, чем лечить', '12 ноября 2018')
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit, nesciunt quo suscipit! Animi cumque doloribus eligendi expedita magni quasi repellendus sit? Molestiae.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit.
                     +article('Сочный Gulp шейк', '12 ноября 2018')
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit.
@@ -52,8 +50,6 @@ block content
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit.
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur nobis quasi. Assumenda culpa dignissimos eveniet impedit.
                     +article('Втопил до упора с pug', '12 ноября 2018')
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
         include ../../components/footer/_footer

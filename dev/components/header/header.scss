@@ -1,5 +1,5 @@
 .header {
-  background: url($imgg) center;
+  background: url($imgg);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -48,6 +48,6 @@
   }
 
   &__blog{
-
+    transform: translate(0,-30%);
   }
 }
