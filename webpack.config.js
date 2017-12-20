@@ -15,10 +15,10 @@ const PATHS = {
 
 module.exports = {
     entry: {
-        'index' : PATHS.dev + '/pages/index/index.js',
-        'blog'  : PATHS.dev + '/pages/blog/blog.js',
-        'about' : PATHS.dev + '/pages/about/about.js',
-        'works' : PATHS.dev + '/pages/works/works.js'
+        'index': PATHS.dev + '/pages/index/index.js',
+        'blog': PATHS.dev + '/pages/blog/blog.js',
+        'about': PATHS.dev + '/pages/about/about.js',
+        'works': PATHS.dev + '/pages/works/works.js'
     },
     output: {
         path: PATHS.build,
@@ -27,7 +27,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            chunks  : ['index', 'common'],
+            chunks: ['index', 'common'],
             template: PATHS.dev + '/pages/index/index.pug'
         }),
         new UglifyJSPlugin({
@@ -35,17 +35,17 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'blog.html',
-            chunks  : ['blog', 'common'],
+            chunks: ['blog', 'common'],
             template: PATHS.dev + '/pages/blog/blog.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'about.html',
-            chunks  : ['about', 'common'],
+            chunks: ['about', 'common'],
             template: PATHS.dev + '/pages/about/about.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'works.html',
-            chunks  : ['works', 'common'],
+            chunks: ['works', 'common'],
             template: PATHS.dev + '/pages/works/works.pug'
         }),
         new CleanWebpackPlugin('build'),
@@ -54,7 +54,7 @@ module.exports = {
             name: 'common'
         }),
         new OptimizeCssAssetsPlugin({
-            cssProcessorOptions: { discardComments: {removeAll: true } }
+            cssProcessorOptions: {discardComments: {removeAll: true}}
         }),
     ],
     module: {
@@ -70,7 +70,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     publicPath: '../',
-                    use: ['css-loader','sass-loader'],
+                    use: ['css-loader', 'sass-loader'],
                 })
             },
             {
@@ -86,6 +86,17 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
+            },
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                options: {
+                    presets: ['es2015']
+                }
+            },
+            {
+                test: /\.(frag|vert)$/,
+                loader: 'webpack-glsl-loader'
             }
         ]
     }
