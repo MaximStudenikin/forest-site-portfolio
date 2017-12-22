@@ -1,0 +1,28 @@
+extends ../../base
+block head
+    title Авторизация
+block content
+    section.welcome__page
+        canvas.Background-canvas
+        div.wrap__welcome__page
+            div.welcome__page--container
+                div.welcome__form
+                    div.big__title Авторизация
+                    form.teg__form(method='post', action='login.php')
+                        div.form__content
+                            label.form__block(for='user_name')
+                                input#user_name.form__input(type='text', name='user_name', required='')
+                            label.form__block(for='user_name')
+                                input#user_pass.form__input(type='password', name='user_pass', required='')
+                        .form__buttons
+                            .form__radios-container
+                                .form__radio
+                                    input#human.form__radio-elem(type='checkbox', name='human', value='Да')
+                                    label.form__block-title(id='human', for='human') Я человек
+                    ul.form__list
+                        li.form__item
+                            a.form__link(href='index.html') На главную
+                        li.form__item
+                            a.form__link(href='#') Войти
+                div.welcome__page--footer
+                    p &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016

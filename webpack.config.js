@@ -30,6 +30,11 @@ module.exports = {
             chunks: ['index', 'common'],
             template: PATHS.dev + '/pages/index/index.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'login__form.html',
+            chunks: ['index', 'common'],
+            template: PATHS.dev + '/pages/index/login__form/login__form.pug'
+        }),
         new UglifyJSPlugin({
             sourceMap: true
         }),

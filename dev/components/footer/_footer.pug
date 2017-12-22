@@ -4,7 +4,13 @@ footer
         div.footer__col-1
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti ipsum.
         div.footer__col-2
-            + list('nav', 'Мои работы', 'Обо мне', 'Блог', 'Авторизоватся')
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href='works.html') Мои работы
+                li.nav__item
+                    a.nav__link(href='about.html') Обо мне
+                li.nav__item
+                    a.nav__link(href='blog.html') Блог
             div.footer__social__list
                 include  ../../components/social__list/_social__list.pug
         div.footer__col-3
