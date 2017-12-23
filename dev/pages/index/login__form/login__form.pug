@@ -1,0 +1,34 @@
+extends ../../base
+block head
+    title Авторизация
+block content
+    section.index__page
+        canvas.Background-canvas
+        div.wrap__index__page
+            div.index__page__container
+                div.login__form
+                    div.normal__title.normal__title--white.normal__title--margin Авторизация
+                    form.teg__form(method='post', action='login.php')
+                        div.login__form__content
+                            label.login__form__block(for='user_name')
+                                span.login__form__icon
+                                    svg.login__form__simbol
+                                        use(xlink:href=require("../../../images/svg/symbols.svg") + '#' + 'login')
+                                input#user_name.login__form__input(type='text', name='user_name', required='')
+                            label.login__form__block(for='user_name')
+                                span.login__form__icon
+                                    svg.login__form__simbol
+                                        use(xlink:href=require("../../../images/svg/symbols.svg") + '#' + 'password')
+                                input#user_pass.login__form__input(type='password', name='user_pass', required='')
+                            div.login__form__buttons
+                                div.login__form__container
+                                    div.login__form__radio
+                                        input#human.form__radio-elem(type='checkbox', name='human', value='Да')
+                                        label.form__block-title(id='human', for='human') Я человек
+                    ul.form__list.form__list--whidth
+                        li.form__item.form__item--whidth
+                            a.form__link.form__link--center(href='index.html') На главную
+                        li.form__item.form__item--whidth
+                            a.form__link.form__link--center(href='#') Войти
+                div.index__page__footer
+                    p &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016

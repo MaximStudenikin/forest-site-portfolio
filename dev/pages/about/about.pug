@@ -1,0 +1,54 @@
+extends ../base
+block head
+    title about
+block content
+    .wrap
+        include ../../components/header/header
+        .container
+            section.about
+                div.about__left
+                    div.about__left__col--left
+                        h1.big__title Обо мне
+                    div.about__left__col--right
+                        div.about__text
+                            img(src=require("../../images/person__big.jpg"), class='big__photo')
+                            h2.normal__title.about__title Кто я
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi consectetur consequatur eos ex facilis, fugiat magnam molestias nesciunt nisi numquam optio pariatur quasi qui reiciendis repellendus veniam voluptas! Pariatur.
+                div.about__right
+                    div.about__text
+                        h2.normal__title lorem
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, blanditiis, corporis cupiditate debitis deleniti deserunt dolor dolore earum ipsum itaque maxime minima necessitatibus omnis quae quasi, sequi similique. Commodi, corporis.
+                    div.harakters
+                        .frontent
+                        .backend
+                        .WorkFolow
+            section.map
+                div.contacts
+                    h2.normal__title lorem ipusm
+                    ul.contacts__list
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title skype_im
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title myemail@my.com
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title +444 444 44 44
+                        li.contacts__item
+                            a.contacts__link
+                                svg.contacts__icon
+                                    use(xlink:href=require("../../images/svg/symbols.svg") + '#' + 'vk')
+                                span.contacts__title ул. Балчуг, 7, Москва, 115035
+
+                div#map
+                    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC_CAeQUG0TIsrm45B2YViKvjJEz8zxZY0&callback=initMap', async defer)
+            section
+                include ../../components/footer/_footer

@@ -1,0 +1,51 @@
+$imgg: '../images/bg.jpg';
+
+//color
+$white: #fff;
+$green: #4e8839;
+$dark: #122620;
+$black: #373e42;
+
+// resolutions
+$large__devices: 1200px;
+$desktops: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//config
+@import '../common/mixin/_fn';
+@import '../common/mixin/_mixin';
+
+//layout
+@import 'layout/humbuger__menu';
+@import 'layout/_tag_reset';
+@import 'layout/_fonts';
+@import 'layout/_base';
+@import 'layout/title';
+
+//components
+@import 'layout/_btn';
+@import '../components/nav/nav';
+@import '../components/social__list/social__list';
+@import '../components/persone/persone';
+@import '../components/header/header';
+@import '../components/footer/footer';
+@import '../components/arrow/arrow';
+@import '../components/map/map';
+
+//index
+@import '../pages/index/index';
+@import '../pages/blog/blog';
+@import '../pages/works/works';
+@import '../pages/about/about';
+@import '../pages/index/login__form/login__form';
+
+//layout
+@import 'layout/tag_reset';
+@import "layout/fonts";
+@import "layout/base";
+
+//components
+@import '../components/btn/btn';
+@import '../components/nav/nav';
+@import "../components/social__list/social__list";

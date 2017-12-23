@@ -1,0 +1,53 @@
+.header {
+  background: url($imgg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  &__social__block{
+    position: relative;
+    right: 20%;
+  }
+
+  &__hamburger__menu{
+    position: relative;
+    left: 25%;
+  }
+
+  &__arrow__down {
+    display: flex;
+  }
+
+  &__triangle{
+    position: absolute;
+    bottom: 0;
+    .left-triangle{
+      fill: #ebefe2;
+    }
+    .right-triangle{
+      fill: #f4f5f0;
+    }
+    .left-triangle-standart{
+      fill: #f4f5f0;
+    }
+  }
+
+  &__blog {
+    margin: auto;
+  }
+  &__top__blog{
+    margin: 4% 0 0 0;
+  }
+
+  &__blog{
+    transform: translate(0,-30%);
+  }
+}

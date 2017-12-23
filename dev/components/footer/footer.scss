@@ -1,0 +1,64 @@
+footer {
+  background: transparentize($black, .2);
+  width: 100%;
+  color: #fff;
+}
+
+.footer {
+  &__container {
+    display: flex;
+    padding: 15px;
+  }
+
+  &__bottom {
+    background: transparentize($green, .2);
+    height: 38px;
+    padding: 9px 0;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__col-1,
+  &__col-2,
+  &__col-3 {
+    border-right: 1px solid #fff;
+    width: 33%;
+    padding: 0 15px;
+    &:last-child{
+      border: none;
+    }
+    &:first-child{
+      p{
+        width: 70%;
+      }
+    }
+  }
+  &__social__list {
+    margin: 15px 0 0 0;
+  }
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 40px 0 0;
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  &__link{
+    color: $white;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}
