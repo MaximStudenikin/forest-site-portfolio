@@ -24,7 +24,7 @@ $phones: 480px;
 @import 'layout/title';
 
 //components
-@import 'layout/_btn';
+@import '../components/btn/_btn';
 @import '../components/nav/nav';
 @import '../components/social__list/social__list';
 @import '../components/persone/persone';
