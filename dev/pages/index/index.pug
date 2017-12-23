@@ -3,13 +3,13 @@ include ../../common/mixin/mixin
 block head
     title welcome page
 block content
-    section.welcome__page
+    section.index__page
         canvas.Background-canvas
-        div.wrap__welcome__page
-            div.welcome__page--container
-                div.welcome__page--header
+        div.wrap__index__page
+            div.index__page__container
+                div.index__page__header
                     + link('login__form.html', 'Авторизоваться')(class='btn', href='login__form.html')
-                div.welcome__form
+                div.index__form
                     include ../../components/persone/persone
                     include ../../components/social__list/_social__list
                     ul.form__list
@@ -19,5 +19,5 @@ block content
                             a.form__link(href='about.html') Обо мне
                         li.form__item
                             a.form__link(href='blog.html') Блог
-                div.welcome__page--footer
+                div.index__page__footer
                     p &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016

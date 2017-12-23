@@ -2,3 +2,49 @@ extends ../base
 block head
     title works
 block content
+    .wrap
+        include ../../components/header/header
+            section.works
+                h1.big__title Мои работы
+                div.slider
+                    div.slider__lief
+                        h2.normal__title Lorem ipsum dolor sit
+                        p Lorem ipsum dolor
+                        a.btn(href='#') Посмотреть сайт
+                    div.slider__right
+                        div.slider__screen
+                            img.slider__img__big(src='../../images/slide_img.png')
+                        div.slider__right__control
+                            div.slider__prev
+                                div.arrow
+                                img.slider__img__small(src='../../images/slide_img.png')
+                            div.slider__nex
+                                div.arrow
+                                img.slider__img__small(src='../../images/slide_img.png')
+            section.reviews
+                div.reviews__block
+                    div.reviews__left
+                        img.persone(src='../../images/slide_img.png')
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid, consequuntur dolor dolores, expedita impedit
+                        span Lorem Lorem - loooorem Loftshool
+                    div.reviews__right
+                        img.persone(src='../../images/slide_img.png')
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid, consequuntur dolor dolores, expedita impedit
+                        span Lorem LoremLorem - loooorem
+                form.teg__form(method='post', action='mail.php')
+                    div.login__form__content
+                        label.login__form__block(for='user_name')
+                            input#user_name.login__form__input(type='text', name='user_name', required='')
+                        label.login__form__block(for='user_name')
+                            input#user_pass.login__form__input(type='password', name='user_pass', required='')
+                        div.login__form__buttons
+                            div.login__form__container
+                                div.login__form__radio
+                                    input#human.form__radio-elem(type='checkbox', name='human', value='Да')
+                                    label.form__block-title(id='human', for='human') Я человек
+                ul.form__list.form__list--whidth
+                    li.form__item.form__item--whidth
+                        a.form__link.form__link--center(href='index.html') На главную
+                    li.form__item.form__item--whidth
+                        a.form__link.form__link--center(href='#') Войти
+        include ../../components/footer/_footer

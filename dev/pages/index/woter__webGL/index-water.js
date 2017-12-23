@@ -4,10 +4,10 @@ import shader from './shaders/haze-water.frag';
 
 import TweenLite from 'gsap'
 
-const divSelector = '.welcome__page';
-const canvasSelector = '.Background-canvas';
-const filePath = require('./img/bg.jpg');
-const fileMapsPath = require('./img/water-maps.jpg');
+const divSelector = '.index__page'; //указываем селектор на странице от которого пляшем
+const canvasSelector = '.Background-canvas'; //Канвас где рисуем
+const filePath = require('./img/bg.jpg'); //картинка по которой будет рисвоать
+const fileMapsPath = require('./img/water-maps.jpg'); // магическая карта
 
 
 let canvas=document.querySelector(canvasSelector);

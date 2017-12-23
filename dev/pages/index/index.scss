@@ -1,6 +1,4 @@
-
-
-.welcome__page--container{
+.index__page__container{
   position: relative;
   display: flex;
   width: 95%;
@@ -14,7 +12,7 @@
   flex: 1;
 }
 
-.welcome__page--header{
+.index__page__header{
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -23,7 +21,7 @@
   }
 }
 
-.welcome__form{
+.index__form{
   background: transparentize($dark, .3);
   display: flex;
   flex-direction: column;
@@ -33,9 +31,10 @@
   height: 395px;
   overflow: hidden;
   border-radius: 10px;
+  margin: -5% 0 0 0;
 }
 
-.wrap__welcome__page{
+.wrap__index__page{
   position: absolute;
   top: 0;
   width: 100%;
@@ -50,7 +49,7 @@
   overflow: hidden;
 }
 
-.welcome__page--footer{
+.index__page__footer{
   color: $white;
   text-align: center;
 }

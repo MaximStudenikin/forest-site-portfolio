@@ -27,14 +27,14 @@
   }
 }
 
-.title__blog{
+.normal__title--white{
   color: #fff;
-  margin: 10% 0 0 0;
   &:after {
     content: '';
-    display: block;
-    width: 90px;
     border-bottom: #fff 3px solid;
-    margin: 30px auto;
   }
+}
+
+.normal__title--margin{
+  margin: 20px 0 0 0;
 }
