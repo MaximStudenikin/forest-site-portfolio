@@ -23,29 +23,32 @@ block content
                             a.slider__arrow.slider__arrow--down(href='#')
                             img.slider__img__small(src=require('../../images/slide_img.png'))
             section.reviews
+                h2.normal__title.normal__title--margin Что говорят
                 div.reviews__block
-                    div.reviews__left
-                        img.persone(src=require('../../images/person_2.jpg'))
+                    div.reviews__coment
+                        img.presone__img(src=require('../../images/person_2.jpg'))
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid, consequuntur dolor dolores, expedita impedit
                         span Lorem Lorem - loooorem Loftshool
-                    div.reviews__right
-                        img.persone(src=require('../../images/person_3.jpg'))
+                    div.reviews__coment
+                        img.presone__img(src=require('../../images/person_3.jpg'))
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid, consequuntur dolor dolores, expedita impedit
                         span Lorem LoremLorem - loooorem
-                form.teg__form(method='post', action='mail.php')
-                    div.login__form__content
-                        label.login__form__block(for='user_name')
-                            input#user_name.login__form__input(type='text', name='user_name', required='')
-                        label.login__form__block(for='user_name')
-                            input#user_pass.login__form__input(type='password', name='user_pass', required='')
-                        div.login__form__buttons
-                            div.login__form__container
-                                div.login__form__radio
-                                    input#human.form__radio-elem(type='checkbox', name='human', value='Да')
-                                    label.form__block-title(id='human', for='human') Я человек
-                ul.form__list.form__list--whidth
-                    li.form__item.form__item--whidth
-                        a.form__link.form__link--center(href='index.html') На главную
-                    li.form__item.form__item--whidth
-                        a.form__link.form__link--center(href='#') Войти
+                form(method='post', action='mail.php')
+                    div.contact__form
+                        div.normal__title.normal__title--white.normal__title--margin Напишите мне
+                        div.contact__form__content
+                            label.contact__form__block(for='user_name')
+                                input#user_name.contact__form__input(type='text', name='user_name', required='')
+                            label.contact__form__block(for='user_pass')
+                                input#user_pass.contact__form__input(type='password', name='user_pass', required='')
+                            div.contact__form__row
+                                div.contact__form__container
+                                    div.contact__form__radio
+                                        input#human.form__radio-elem(type='checkbox', name='human', value='Да')
+                                        label.form__block-title(id='human', for='human') Я человек
+                        ul.form__list.form__list--whidth
+                            li.form__item.form__item--whidth
+                                a.form__link.form__link--center(href='index.html') На главную
+                            li.form__item.form__item--whidth
+                                a.form__link.form__link--center(href='#') Войти
         include ../../components/footer/_footer
