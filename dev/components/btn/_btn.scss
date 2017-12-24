@@ -1,5 +1,4 @@
 .btn {
-  width: 180px;
   border: 1px solid $white;
   border-radius: 30px;
   padding: 15px 28px;
@@ -8,4 +7,15 @@
   &:hover{
     background-color: $green;
   }
+}
+
+.btn--color{
+  background-color: $green;
+  &:hover{
+    background-color: $dark;
+  }
+}
+
+.btn--margin{
+  margin: 20px 0 0 0;
 }
