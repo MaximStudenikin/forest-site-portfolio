@@ -1,27 +1,43 @@
-.index__page__container{
-  position: relative;
-  display: flex;
-  width: 95%;
-  height: 100%;
-  max-width: 1800px;
-  min-width: 480px;
-  margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  flex: 1;
+.index__page{
+  background: #000;
 }
 
-.index__page__header{
+.index__page__header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  @include phones{
+  z-index: 999;
+  @include phones {
     justify-content: center;
   }
 }
 
-.index__form{
+.index__page__container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  perspective: 800px;
+}
+
+.flip__card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front__form, .back__form {
+  position: absolute;
   background: transparentize($dark, .3);
   display: flex;
   flex-direction: column;
@@ -32,9 +48,20 @@
   overflow: hidden;
   border-radius: 10px;
   margin: -5% 0 0 0;
+  backface-visibility: hidden;
 }
 
-.wrap__index__page{
+.back__form {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.flipped__card {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.wrap__index__page {
   position: absolute;
   top: 0;
   width: 100%;
@@ -42,14 +69,73 @@
   overflow: hidden;
 }
 
-.Background-canvas{
+.Background-canvas {
   display: flex;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.index__page__footer{
+.index__page__footer {
   color: $white;
   text-align: center;
+}
+
+.login__form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.login__form__block {
+  display: flex;
+  padding: 0 20px;
+  margin: 20px 0 0 0;
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.form__list--whidth,
+.form__item--whidth,
+.form__link--center {
+  width: 100%;
+}
+
+.form__link--center {
+  text-align: center;
+}
+
+.login__form__input {
+  height: 45px;
+  width: 300px;
+  border-radius: 0 30px 30px 0;
+  border: 0;
+  padding: 5px 15px;
+}
+
+.login__form__icon {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px 0 0 30px;
+  background-color: #f0efe9;
+}
+
+.login__form__simbol {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: 35%;
+}
+
+.login__form__buttons {
+  margin: 20px 0 0 0;
+}
+
+.login__form__container {
+  display: flex;
+  justify-content: center;
 }
