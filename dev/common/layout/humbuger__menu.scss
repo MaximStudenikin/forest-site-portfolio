@@ -1,29 +1,4 @@
-.hamburger-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(#2f3234, .99);
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  display: none;
-  transition: opacity .3s;
-
-  &_visible {
-    display: flex;
-    opacity: 0;
-  }
-}
-
-.hamburger-menu__logo {
-  position: absolute;
-  top: rem(10px);
-  left: rem(30px);
-}
-
-.hamburger-menu__close {
+.hamburger__menu__close {
   position: absolute;
   right: rem(15px);
   top: rem(15px);
@@ -33,7 +8,7 @@
   box-sizing: content-box;
 
   &:hover {
-    .hamburger-menu__close-icon {
+    .hamburger__menu__close-icon {
       use {
         fill: $white;
       }
@@ -41,7 +16,7 @@
   }
 }
 
-.hamburger-menu__close-icon {
+.hamburger__menu__close-icon {
   width: 100%;
   height: 100%;
 
@@ -51,7 +26,7 @@
   }
 }
 
-.hamburger-menu-link {
+.hamburger__menu-link {
   vertical-align: middle;
   position: relative;
   height: rem(22px);
@@ -60,7 +35,7 @@
   display: flex;
 }
 
-.hamburger-menu-link__bars {
+.hamburger__menu-link__bars {
   &, &:before, &:after {
     background: $white;
     width: rem(24px);

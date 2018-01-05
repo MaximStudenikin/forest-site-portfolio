@@ -8,7 +8,5 @@ let $ = require('jquery');
 //flip__effect
 $('.flip__effect').on('click', event =>{
     event.preventDefault();
-
     $('.flip__card').toggleClass('flipped__card');
-
 });
