@@ -3,24 +3,26 @@ include ../../common/mixin/mixin
 block head
     title blog
 block content
-    .wrap
+    div.wrap
         section.header.paralax__effect--scroll(data-speed=
         "3")
             div.header__top.header__top__blog
                 div.header__social__block
                     include ../../components/social__list/_social__list
                 div.hamburger__menu.header__hamburger__menu
-                    a.hamburger-menu-link(href='#')
-                        div.hamburger-menu-link__bars
+                    a.hamburger__menu-link(href='#')
+                        div.hamburger__menu-link__bars
             div.header__persone.header__blog
                 div.persone
                     img(src=require("../../images/person.jpg"), class='presone__img')
                     h1.big__title.normal__title--white Блог
                     p.prersone__subtitle Статьи которые я написал
+            div.header__arrow__down
+                include ../../components/arrow/arrow
         svg(viewBox="0 0 1000 85").header__triangle
             polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="left-triangle left-triangle-standart")
             polygon(points="1000,0   1000,86   500,86   500,75.5", class="right-triangle")
-        .container
+        div.container
             section.blog
                 div.blog__col__left
                     nav.blog__nav__teg
@@ -53,3 +55,15 @@ block content
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt iste libero magni obcaecati quia quis rem similique ullam vel. Debitis dolorum earum eum laudantium nesciunt quae repudiandae? Incidunt, nesciunt?
         include ../../components/footer/_footer
+        include  ../../components/full menu/full__menu
+        div.swipe__sidebar
+            ul.swipe__sidebar__list
+                li.swipe__sidebar__item.swipe__sidebar__item--active
+                    a.swipe__sidebar__link(href='#') Самый сок в SASS
+                li.swipe__sidebar__item
+                    a.swipe__sidebar__link(href='#') Верстка без боли, чем лечить
+                li.swipe__sidebar__item
+                    a.swipe__sidebar__link(href='#') Сочный Gulp шейк
+                li.swipe__sidebar__item
+                    a.swipe__sidebar__link(href='#') Втопил до упора с pug
+            div.swipe__sidebar__btn
